@@ -5,6 +5,10 @@
   margin: 20px 170px;
 }
 
+.navbar img {
+  width: 160px;
+  height: 70px;
+}
 .nav-menu {
   display: flex;
   align-items: center;
@@ -24,4 +28,16 @@
 
 .nav-connect:hover {
   transform: scale(1.05);
+}
+
+.my-nav-link {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.my-nav-link-active {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
 }

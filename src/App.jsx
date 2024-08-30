@@ -1,16 +1,13 @@
-import React from 'react'
+// Bringing in the required import from 'react-router-dom'
+import { Outlet } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar'
-import Hero from './Components/Hero/Hero'
-import About from './Components/About/About'
-import MyWork from './Components/MyWork/MyWork'
+
 
 const App = () => {
   return (
     <div>
       <Navbar/>
-      <Hero/>
-      <About/>
-      <MyWork/>
+      <Outlet />
     </div>
   )
 }

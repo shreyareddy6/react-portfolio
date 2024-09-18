@@ -34,6 +34,7 @@ const Navbar = () => {
             className={
               currentPage === "/" ? "my-nav-link-active" : "my-nav-link"
             }
+            onClick={closeMenu}
           >
             Home
             {currentPage === "/" && (
@@ -47,8 +48,9 @@ const Navbar = () => {
             className={
               currentPage === "/About" ? "my-nav-link-active" : "my-nav-link"
             }
+            onClick={closeMenu}
           >
-            About
+            About Me
             {currentPage === "/About" && (
               <img src={underline} alt="underline" className="underline-img" />
             )}
@@ -60,6 +62,7 @@ const Navbar = () => {
             className={
               currentPage === "/MyWork" ? "my-nav-link-active" : "my-nav-link"
             }
+            onClick={closeMenu}
           >
             My Work
             {currentPage === "/MyWork" && (
@@ -73,6 +76,7 @@ const Navbar = () => {
             className={
               currentPage === "/Contact" ? "my-nav-link-active" : "my-nav-link"
             }
+            onClick={closeMenu}
           >
             Contact
             {currentPage === "/Contact" && (

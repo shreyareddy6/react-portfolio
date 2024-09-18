@@ -55,18 +55,20 @@
   text-decoration: none;
 }
 
-.hero-resume {
+.resume-button {
+  color: white;
   padding: 25px 75px;
   border-radius: 50px;
   border: 2px solid #fff;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .hero-connect:hover {
   border: 2px solid #fff;
 }
 
-.hero-resume:hover {
+.resume-button:hover {
   border-color: #b415ff;
 }
 

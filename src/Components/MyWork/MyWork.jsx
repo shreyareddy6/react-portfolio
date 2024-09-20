@@ -59,7 +59,11 @@ const MyWork = () => {
             onClick={showLessWorks}
           >
             <p>Show Less</p>
-            <img src={arrow_icon} alt="Show less arrow" />
+            <img
+              src={arrow_icon}
+              alt="Show less arrow"
+              style={{ transform: "scaleX(-1)" }}
+            />
           </div>
         )}
       </div>

@@ -22,6 +22,7 @@
   bottom: 0;
   right: 0;
   z-index: -1;
+  width: 200px; /* Adjust size to be more flexible */
 }
 
 .mywork-container {
@@ -32,8 +33,9 @@
 
 .mywork-container img {
   box-sizing: border-box;
-  width: 370px;
-  height: 270px;
+  width: 100%; /* Use 100% to ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 370px; /* Optional: Limit max size */
   transition: 0.3s;
   cursor: pointer;
   border-radius: 10px;
@@ -46,8 +48,18 @@
   transition: 0.3s;
 }
 
-.mywork-showmore {
+/* Shared styles for Show More and Show Less buttons */
+.mywork-buttons {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.mywork-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 15px;
   border-radius: 50px;
   border: 2px solid white;
@@ -59,9 +71,26 @@
   cursor: pointer;
 }
 
-.mywork-showmore:hover {
+.mywork-button:hover {
   gap: 30px;
   transition: 0.6s;
+}
+
+/* Specific styles for Show More button */
+.mywork-showmore {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Specific styles for Show Less button */
+.mywork-showless {
+  background-color: #ff00ff;
+  color: white;
+}
+
+.mywork-showless:hover {
+  background-color: #e600e6;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -70,27 +99,31 @@
     margin: 50px 70px;
     align-items: start;
   }
+
   .mywork-title h1 {
     padding: 0;
     font-size: 50px;
     font-weight: 600;
   }
+
   .mywork-title img {
-    width: 130px;
-    margin-right: -20px;
+    width: 130px; /* Adjust the size for smaller screens */
+    right: -20px;
   }
+
   .mywork-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
     gap: 30px;
   }
+
   .mywork-container img {
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Make images responsive */
+    height: auto;
   }
-  .mywork-showmore {
+
+  .mywork-button {
     padding: 20px 40px;
     font-size: 18px;
     margin: 50px auto;
-    cursor: pointer;
   }
 }

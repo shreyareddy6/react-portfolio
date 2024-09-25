@@ -68,6 +68,7 @@
 .contact-detail a {
   text-decoration: none;
   color: white;
+  font-size: 20px;
 }
 
 .contact-detail a:hover {
@@ -162,6 +163,9 @@ textarea:-webkit-autofill::first-line {
     font-size: 54px;
   }
   .contact-left p {
+    font-size: 18px;
+  }
+  .contact-left a {
     font-size: 18px;
   }
   .contact-detail {

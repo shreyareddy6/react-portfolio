@@ -65,6 +65,15 @@
   gap: 20px;
 }
 
+.contact-detail a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-detail a:hover {
+  text-decoration: underline;
+}
+
 .contact-right {
   display: flex;
   flex-direction: column;
@@ -161,6 +170,7 @@ textarea:-webkit-autofill::first-line {
   .contact-detail img {
     width: 25px;
   }
+
   .contact-right label {
     font-size: 20px;
   }

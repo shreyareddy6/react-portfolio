@@ -4,6 +4,8 @@ import theme_pattern from "../../assets/theme_pattern.svg";
 import mail_icon from "../../assets/mail_icon.svg";
 import location_icon from "../../assets/location_icon.svg";
 import call_icon from "../../assets/call_icon.svg";
+import github_icon from "../../assets/github_icon.svg";
+import linekdin_icon from "../../assets/linkedin_icon.svg";
 
 const Contact = () => {
   // State to manage form inputs
@@ -56,6 +58,21 @@ const Contact = () => {
             <div className="contact-detail">
               <img src={mail_icon} alt="" />
               <p>y.s.g.shreya@gmail.com</p>
+            </div>
+            <div className="contact-detail">
+              <img src={github_icon} alt="" />
+              <a href="https://github.com/shreyareddy6" target="_blank">
+                shreyareddy6
+              </a>
+            </div>
+            <div className="contact-detail">
+              <img src={linekdin_icon} alt="" />
+              <a
+                href="https://www.linkedin.com/in/shreyayerragudi/"
+                target="_blank"
+              >
+                shreyayerragudi
+              </a>
             </div>
             <div className="contact-detail">
               <img src={location_icon} alt="" />

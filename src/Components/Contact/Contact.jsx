@@ -6,6 +6,8 @@ import location_icon from "../../assets/location_icon.svg";
 import call_icon from "../../assets/call_icon.svg";
 import github_icon from "../../assets/github_icon.svg";
 import linekdin_icon from "../../assets/linkedin_icon.svg";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   // State to manage form inputs
@@ -32,11 +34,17 @@ const Contact = () => {
     }).then((res) => res.json());
 
     if (res.success) {
-      alert(res.message);
-      // Clear the form fields after submission
+      toast.success("Email sent successfully!", {
+        className: "custom-success-toast",
+        progressClassName: "custom-progress-bar",
+        icon: "🎉",
+      });
+
       setName("");
       setEmail("");
       setMessage("");
+    } else {
+      toast.error(res.message || "There was an error submitting the form.");
     }
   };
 
@@ -110,6 +118,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
+      <ToastContainer position="bottom-right" />
     </div>
   );
 };
